@@ -1,0 +1,34 @@
+# Source Configuration
+# Credentials and settings for each data source connector
+#
+# Structure:
+#   sources:
+#     confluence:
+#       base_url: "https://example.atlassian.net"
+#       auth: "oauth2"          # or "api_token"
+#       spaces: ["SPACE1", "SPACE2"]
+#       exclude_labels: ["draft", "archived"]
+#       sync_interval: "daily"
+#
+#     gdrive:
+#       service_account: "config/gdrive_sa.json"
+#       root_folders:
+#         - id: "folder_id"
+#           label: "Folder Label"
+#           department: null     # null = corporate level
+#       file_types: ["docx", "pdf", "pptx", "md"]
+#       sync_interval: "daily"
+#
+#     github:
+#       org: "org-name"
+#       repos: ["repo1", "repo2"]
+#       paths: ["README.md", "docs/**", "ADR/**"]
+#       sync_interval: "on_push"  # webhook-triggered
+#
+#     sharepoint:
+#       tenant_id: "..."
+#       sites: ["site1", "site2"]
+#       sync_interval: "weekly"
+#
+# Credentials should be encrypted at rest or referenced via environment variables
+# This file is loaded by src/common/config.py::SourceConfig

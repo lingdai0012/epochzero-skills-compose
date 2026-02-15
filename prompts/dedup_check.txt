@@ -1,0 +1,8 @@
+# Deduplication Check Prompt
+#
+# Purpose: Check if a generated skill redundantly covers content from parent skills
+# Input: Generated skill content, parent skill content(s)
+# Output: Redundancy assessment (score 0-1), specific overlapping sections, suggestions to reduce
+#
+# Used by: src/generation/hierarchical_aggregator.py, src/qa/content.py
+# Model: Claude Haiku (cost-efficient verification)

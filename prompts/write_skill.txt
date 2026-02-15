@@ -1,0 +1,15 @@
+# Skill Writing Prompt
+#
+# Purpose: Generate the full SKILL.md content from a plan and source chunks
+# Input: Skill plan (name, level, description), parent skill summaries, source chunks, writing guidelines
+# Output: Complete SKILL.md with YAML frontmatter and structured content
+#
+# Writing guidelines:
+#   - Imperative tone ("Do X", not "You should do X")
+#   - Under 500 lines (split into SKILL.md + references/ if longer)
+#   - H1 → H2 → H3 heading hierarchy
+#   - No redundancy with parent skills (reference via depends_on instead)
+#   - Actionable instructions with concrete examples
+#
+# Used by: src/generation/writer.py
+# Model: Claude Sonnet (writing quality)

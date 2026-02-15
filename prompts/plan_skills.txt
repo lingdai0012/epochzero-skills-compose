@@ -1,0 +1,8 @@
+# Skill Planning Prompt
+#
+# Purpose: Organize aggregated topics into planned skills with boundaries
+# Input: Knowledge topics, existing skills, org chart
+# Output: Skill boundaries, depends_on relationships, estimated sizes, priorities
+#
+# Used by: src/generation/planner.py
+# Model: Claude Opus (complex reasoning for planning)

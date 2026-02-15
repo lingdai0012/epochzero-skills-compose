@@ -1,5 +1,21 @@
 # Dependencies
 node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+
+# Python tools
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Data
+data/
 
 # Environment variables
 .env

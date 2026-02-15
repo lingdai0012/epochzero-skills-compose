@@ -1,0 +1,28 @@
+# Generation Configuration
+# LLM parameters, model strategy, and processing settings
+#
+# Structure:
+#   model_strategy:
+#     classification: "claude-haiku-4-5"     # Cheap, fast
+#     aggregation: "claude-sonnet-4-5"       # Mid-tier
+#     skill_writing: "claude-sonnet-4-5"     # Quality matters
+#     skill_planning: "claude-opus-4-5"      # Complex reasoning
+#     qa_checks: "claude-haiku-4-5"          # Simple verification
+#     dedup_check: "claude-haiku-4-5"        # Cost-efficient
+#
+#   token_budgets:
+#     classification_input: 4000
+#     generation_input: 8000
+#     generation_output: 4000
+#     qa_input: 4000
+#
+#   batch_sizes:
+#     classification: 10       # chunks per LLM call
+#     embedding: 128           # chunks per Voyage API call
+#
+#   skill_constraints:
+#     max_lines: 500
+#     min_lines: 50
+#     max_references: 10
+#
+# This file is loaded by src/common/config.py::GenerationConfig

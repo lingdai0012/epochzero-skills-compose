@@ -1,0 +1,9 @@
+# Hierarchy Classification Prompt
+#
+# Purpose: Classify a chunk of content into the organizational hierarchy
+# Input: Chunk content, org chart, topic taxonomy
+# Output: hierarchy_level (corporate/department/team), department, team, skill_category, confidence, reasoning
+#
+# Used by: src/classification/llm_classifier.py
+# Model: Claude Haiku (cost-efficient for classification)
+# Batch size: 5-10 chunks per call

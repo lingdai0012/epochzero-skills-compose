@@ -1,0 +1,8 @@
+# Knowledge Aggregation Prompt
+#
+# Purpose: Identify sub-topics within a group of classified chunks
+# Input: Grouped chunks (by taxonomy category), taxonomy context
+# Output: List of identified sub-topics with chunk assignments
+#
+# Used by: src/generation/aggregator.py
+# Model: Claude Sonnet (mid-tier reasoning)

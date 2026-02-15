@@ -1,0 +1,27 @@
+# Topic Taxonomy
+# Seed topics organized by hierarchy level
+#
+# Structure:
+#   corporate:
+#     topic-slug:
+#       description: "What this topic covers"
+#       seed_keywords: ["keyword1", "keyword2"]
+#       expected_sources: ["source1", "source2"]  # optional
+#       priority: high | medium | low
+#
+#   departments:
+#     department-slug:
+#       topic-slug:
+#         description: "..."
+#         seed_keywords: [...]
+#         priority: high | medium | low
+#
+#   teams:
+#     department-team-slug:
+#       topic-slug:
+#         description: "..."
+#         priority: high | medium | low
+#
+# This file is loaded by src/common/config.py::TopicTaxonomy
+# New topics discovered during aggregation are proposed for addition here
+# See claude_dev_logs/auto-skill-generator-dev--details-plan.md for full example

@@ -1,0 +1,18 @@
+# GitHub Actions CI/CD Pipeline
+#
+# Triggers: push to main, pull requests
+#
+# Jobs:
+#   lint:
+#     - Run ruff (linting + formatting check)
+#
+#   typecheck:
+#     - Run mypy strict mode
+#
+#   test:
+#     - Run pytest (unit + integration)
+#     - Upload coverage report
+#
+#   build:
+#     - Build Docker image
+#     - Push to registry (on main only)

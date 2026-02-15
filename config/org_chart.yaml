@@ -1,0 +1,17 @@
+# Organization Chart
+# Defines the company → departments → teams hierarchy
+#
+# Structure:
+#   company:
+#     name: "Company Name"
+#     departments:
+#       - name: "Department Name"
+#         head: "Department Head Name"
+#         teams:
+#           - name: "Team Name"
+#             focus: "Brief description of team's focus area"
+#             key_tools: ["Tool1", "Tool2"]  # optional
+#             headcount: 25                   # optional
+#
+# This file is loaded by src/common/config.py::OrgChart
+# See claude_dev_logs/auto-skill-generator-dev--details-plan.md for full example

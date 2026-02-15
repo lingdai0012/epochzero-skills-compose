@@ -1,0 +1,23 @@
+# Sync Schedule Configuration
+# Defines when each source connector runs
+#
+# Structure:
+#   schedules:
+#     confluence:
+#       type: cron
+#       expression: "0 2 * * *"    # Daily at 2 AM
+#
+#     github:
+#       type: webhook
+#       event: "push"
+#       branches: ["main"]
+#
+#     gdrive:
+#       type: cron
+#       expression: "0 3 * * 1"    # Weekly on Monday at 3 AM
+#
+#     sharepoint:
+#       type: cron
+#       expression: "0 4 * * 1"    # Weekly on Monday at 4 AM
+#
+# This file is loaded by src/updates/scheduler.py::SyncScheduler
